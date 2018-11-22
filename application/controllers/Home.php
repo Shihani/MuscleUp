@@ -15,8 +15,8 @@ class Home extends CI_Controller {
         $this->load->view('sign_up');
     }
 
-    public function services() {
-        $this->load->view('services');
+    public function success_stories() {
+        $this->load->view('success_stories');
     }
 
     public function articles() {

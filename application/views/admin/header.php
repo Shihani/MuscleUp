@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="<?php echo base_url('asset/images/logo_white.jpg') ?>">
+    <link rel="icon" href="<?php echo base_url() ?>asset/images/Gym Logo.jpg">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -46,13 +46,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </li>
             <?php endif; ?>
             <li class="nav-item">
-                <a class="nav-link <?php if($page=='services'){echo " active";}?>" href="<?php echo base_url('index.php/home/services') ?>">Services</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link <?php if($page=='articles'){echo " active";}?>" href="<?php echo base_url('index.php/home/articles') ?>">Articles</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link <?php if($page=='forum'){echo " active";}?>" href="<?php echo base_url('index.php/home/forum') ?>">Forum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link <?php if($page=='success_stories'){echo " active";}?>" href="<?php echo base_url('index.php/home/success_stories') ?>">Success Stories</a>
             </li>
         </ul>
 

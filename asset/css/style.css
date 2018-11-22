@@ -5,3 +5,15 @@
 .form-group {
     color: cornflowerblue;
 }
+
+/*success stories page header container*/
+.masthead {
+    height: 75vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
