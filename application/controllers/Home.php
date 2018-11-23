@@ -16,7 +16,7 @@ class Home extends CI_Controller {
     }
 
     public function success_stories() {
-        $this->load->view('success_stories');
+        $this->load->view('stories/success_stories');
     }
 
     public function articles() {
