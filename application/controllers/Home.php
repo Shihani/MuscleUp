@@ -15,4 +15,10 @@ class Home extends CI_Controller {
         $this->load->view('sign_up');
     }
 
+    public function get_photos() {
+        
+            $this->load->view('gallery');
+        
+    }
+
 }
