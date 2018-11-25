@@ -27,4 +27,9 @@ class Home extends CI_Controller {
         $this->load->view('forum');
     }
 
+    public function my_profile() {
+        $this->load->view('user/my_profile_main');
+
+    }
+
 }

@@ -26,7 +26,7 @@ class Sign_up extends MY_Controller {
             if($result) {
 
                 $this->send_mail($email, $subject, $message);
-                
+
                 $this->session->set_flashdata('msg', '<div class="alert alert-primary text-center" role="alert"> Signed Up Successfully! </div>');
                 redirect('home/login');
             }

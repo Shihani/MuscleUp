@@ -2,6 +2,12 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
+<?php
+if($this->session->userdata('flag')!='a') {
+    redirect('Home/login');
+}
+?>
+
 <!doctype html>
 <html lang="en">
 

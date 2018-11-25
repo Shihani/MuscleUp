@@ -2,6 +2,12 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
+<?php
+if($this->session->userdata('loggedIn')!=1) {
+    redirect('Home/login');
+}
+?>
+
 <!doctype html>
 <html lang="en">
 
