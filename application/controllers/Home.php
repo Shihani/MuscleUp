@@ -20,7 +20,19 @@ class Home extends CI_Controller {
     }
 
     public function articles() {
-        $this->load->view('articles');
+
+        $this->load->model('Model_Article');
+        $result['articles'] = $this->Model_Article->get_few_articles();
+
+        if($result!=false) {
+
+            $this->load->view('health_tips_articles', $result);
+
+        }
+        else {
+            echo "Something went wrong !";
+        }
+
     }
 
     public function forum() {

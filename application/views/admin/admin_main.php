@@ -1,5 +1,13 @@
 <?php $panel='dashboard'; include "admin_frame.php"; ?>
 
+    <!-- Display the status message -->
+
+<?php
+if($this->session->flashdata('msg')) {
+    echo $this->session->flashdata('msg');
+}
+?>
+
     <div class="col-md-9">
         <div class="card">
             <div class="card">

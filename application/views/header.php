@@ -19,6 +19,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
     <title> Muscleup.lk </title>
 
 </head>
