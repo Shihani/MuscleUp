@@ -1,6 +1,6 @@
 <?php
 
-class Sign_up extends CI_Controller {
+class Sign_up extends MY_Controller {
 
     function user_sign_up() {
 
@@ -15,10 +15,18 @@ class Sign_up extends CI_Controller {
         }
         else {
 
+            $email = $this->input->post('email');
+            $password = $this->input->post('password');
+            $subject = "Welcome to Muscle Up Gymnasium";
+            $message = "You have successfully registered in our Muscle Up Gymnasium. Your account password is $password.\nHope you enjoy our services. Thank you.";
+
             $this->load->model('model_user');
             $result = $this->model_user->insert_user_data();
 
             if($result) {
+
+                $this->send_mail($email, $subject, $message);
+
                 $this->session->set_flashdata('msg', '<div class="alert alert-primary text-center" role="alert"> Signed Up Successfully! </div>');
                 redirect('home/login');
             }

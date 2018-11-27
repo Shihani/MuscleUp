@@ -21,10 +21,11 @@ class Login extends CI_Controller {
 
                 $user_details = array(
 
-                    'id' => $result->userId,
+                    'id' => $result->id,
                     'username' => $result->username,
                     'email' => $result->email,
                     'flag' => $result->flag,
+                    'registered' => $result->registered,
                     'loggedIn' => true
 
                 );
